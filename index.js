@@ -20,6 +20,6 @@ app.get('/get', (req,res) => {
     )
 })
 
-app.listen(1234)
+app.listen(process.env.PORT)
 
-console.log('Server listening on port 1234')
+console.log(`Server listening on port ${process.env.PORT}.`)
